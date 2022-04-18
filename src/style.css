@@ -135,3 +135,9 @@ header .sun-icon {
   border: none;
   border-radius: 0.25rem;
 }
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  padding-top: 20px;
+}
