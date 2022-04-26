@@ -1,7 +1,14 @@
-function displayDate() {
-  let now = new Date();
+function displayDate(timestamp) {
+  let now = new Date(timestamp);
   let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let mins = now.getMinutes();
+  if (mins < 10) {
+    mins = `0${mins}`;
+  }
+
   let days = [
     "Sunday",
     "Monday",
@@ -12,8 +19,7 @@ function displayDate() {
     "Saturday",
   ];
   let day = days[now.getDay()];
-  let dateBanner = document.querySelector("#current-date");
-  dateBanner.innerHTML = `It's ${day}, ${hours}:${mins}`;
+  return `Last updated: ${day}, ${hours}:${mins}`;
 }
 displayDate();
 
@@ -23,6 +29,8 @@ function showWeather(response) {
   document.querySelector("#current-temperature").innerHTML = currentTemp;
   let currentDescription = response.data.weather[0].description;
   document.querySelector("#weather-description").innerHTML = currentDescription;
+  let dateBanner = document.querySelector("#current-date");
+  dateBanner.innerHTML = displayDate(response.data.dt * 1000);
 }
 
 function searchCity(cityName) {
