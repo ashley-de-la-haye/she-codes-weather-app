@@ -142,3 +142,10 @@ header .sun-icon {
   font-size: 10px;
   padding-top: 20px;
 }
+
+.units {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: -25px;
+}

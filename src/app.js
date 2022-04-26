@@ -20,7 +20,7 @@ displayDate();
 function showWeather(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
   let currentTemp = Math.round(response.data.main.temp);
-  document.querySelector("#current-temperature").innerHTML = `${currentTemp}°`;
+  document.querySelector("#current-temperature").innerHTML = currentTemp;
   let currentDescription = response.data.weather[0].description;
   document.querySelector("#weather-description").innerHTML = currentDescription;
 }
