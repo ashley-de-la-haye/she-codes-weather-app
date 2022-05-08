@@ -31,6 +31,12 @@ function showWeather(response) {
   document.querySelector("#weather-description").innerHTML = currentDescription;
   let dateBanner = document.querySelector("#current-date");
   dateBanner.innerHTML = displayDate(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(cityName) {
