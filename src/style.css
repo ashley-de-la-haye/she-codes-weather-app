@@ -149,3 +149,13 @@ header .sun-icon {
   position: relative;
   top: -25px;
 }
+
+.active {
+  color: #53565c;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: #53565c;
+}
