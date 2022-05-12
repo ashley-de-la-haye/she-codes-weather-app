@@ -159,3 +159,30 @@ header .sun-icon {
   text-decoration: none;
   color: #53565c;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 15px;
+  color: #53565c;
+}
+
+.weather-forecast-temperature-maximum {
+  color: #53565c;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+.weather-forecast-temperature-minimum {
+  color: #53565c;
+  opacity: 0.6;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
