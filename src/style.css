@@ -16,7 +16,7 @@ h1 {
 }
 h2 {
   color: #53565c;
-  font-size: 10px;
+  font-size: 11px;
   font-family: "Comfortaa", cursive;
 }
 
@@ -44,11 +44,6 @@ p {
   border: 1px solid #b8b8b8;
 }
 
-header .sun-icon {
-  color: #f0d744;
-  font-size: 50px;
-}
-
 .search-bar {
   font-size: 12px;
   border-radius: 25px;
@@ -72,75 +67,11 @@ header .sun-icon {
   border: none;
 }
 
-.card {
-  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.15);
-  border: none;
-}
-
-.monday-card,
-.tuesday-card,
-.wednesday-card,
-.thurs-card {
-  background: linear-gradient(
-    109.6deg,
-    rgb(204, 228, 247) 11.2%,
-    rgb(237, 246, 250) 100.2%
-  );
-}
-
-.card-title {
-  text-align: center;
-  font-family: "Comfortaa", cursive;
-  font-size: 15px;
-  color: #53565c;
-}
-
-.monday-info,
-.tuesday-info,
-.wednesday-info,
-.thursday-info {
-  color: #53565c;
-  font-size: 10px;
-  text-align: center;
-  font-family: "Comfortaa", cursive;
-}
-
-.sun-icon {
-  color: #ffd23f;
-  font-size: 30px;
-  text-align: center;
-  display: block;
-}
-
-.rain-icon {
-  color: #5682d7;
-  font-size: 30px;
-}
-
-.cloud-icon {
-  color: #b3b3b3;
-  font-size: 30px;
-}
-
-.overcast-icon {
-  color: orange;
-  font-size: 30px;
-}
-
-.card :hover {
-  background: linear-gradient(
-    109.6deg,
-    rgb(167, 199, 224) 11.2%,
-    rgb(210, 229, 236) 100.2%
-  );
-  border: none;
-  border-radius: 0.25rem;
-}
-
 .footer {
   text-align: center;
   font-size: 10px;
   padding-top: 20px;
+  color: #53565c;
 }
 
 .units {
@@ -148,16 +79,6 @@ header .sun-icon {
   font-family: "Roboto", sans-serif;
   position: relative;
   top: -25px;
-}
-
-.active {
-  color: #53565c;
-  cursor: default;
-}
-
-.active:hover {
-  text-decoration: none;
-  color: #53565c;
 }
 
 .weather-forecast {
@@ -168,13 +89,14 @@ header .sun-icon {
 .weather-forecast-date {
   text-align: center;
   font-family: "Comfortaa", cursive;
-  font-size: 15px;
-  color: #53565c;
+  font-size: 17px;
+  color: white;
 }
 
 .weather-forecast-temperature-maximum {
   color: #53565c;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: bold;
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
@@ -182,7 +104,7 @@ header .sun-icon {
 .weather-forecast-temperature-minimum {
   color: #53565c;
   opacity: 0.6;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
